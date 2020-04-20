@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SmartFinTest</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+
+    <string name="action_search">Поиск</string>
+    <string name="action_basket">Корзина</string>
+
+    <string name="menu_products">Товары</string>
+    <string name="menu_history">История</string>
+    <string name="menu_reports">Отчеты</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_support">Поддержка</string>
+    <string name="menu_log_out">Выйти</string>
+
+    <string name="to_pay">Оплатить</string>
+    <string name="total">Итого:</string>
+    <string name="add">Добавить</string>
+    <string name="cancel">Отменить</string>
+    <string name="clear_all">Очистить все</string>
+    <string name="empty_basket_title">Товаров нет</string>
+    <string name="empty_basket_message">Добавьте товары из каталога, а затем выберите способ оплаты</string>
+
+    <string name="weight_format">%1$s КГ</string>
+    <string name="basket_number_format">#%1$d</string>
+    <string name="total_cost_format">%1$.2f \u20BD</string>
+    <string name="weight_per_cost_format">%1$.1f КГ х %2$.2f \u20BD</string>
+    <string name="summary_per_weight_format">%1$.2f \u20BD / %2$.1f КГ</string>
+</resources>

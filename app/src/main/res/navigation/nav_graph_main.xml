@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/nav_products">
+
+    <fragment
+        android:id="@+id/nav_products"
+        android:name="com.example.smartfintest.ui.home.HomeFragment"
+        android:label="@string/menu_products"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/products_to_basket"
+            app:destination="@id/action_basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/action_basket"
+        android:name="com.example.smartfintest.ui.basket.BasketFragment"
+        android:label="@string/action_basket"
+        tools:layout="@layout/fragment_basket" />
+</navigation>

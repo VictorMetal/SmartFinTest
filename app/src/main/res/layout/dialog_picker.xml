@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialog_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Продукт" />
+
+    <TextView
+        android:id="@+id/dialog_total_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="600 р / 12 Кг" />
+
+    <EditText
+        android:id="@+id/dialog_weight_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="numberDecimal"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_product_name"
+        tools:ignore="Autofill,LabelFor"
+        tools:text="12 КГ" />
+
+    <Button
+        android:id="@+id/dialog_one_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/dialog_two_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_weight_edit"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_two_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2"
+        app:layout_constraintEnd_toStartOf="@+id/dialog_three_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dialog_one_button"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_weight_edit"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_three_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dialog_two_button"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_weight_edit"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_four_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="4"
+        app:layout_constraintEnd_toStartOf="@+id/dialog_two_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_one_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_five_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="5"
+        app:layout_constraintEnd_toStartOf="@id/dialog_six_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/dialog_four_button"
+        app:layout_constraintTop_toBottomOf="@id/dialog_two_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_six_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/dialog_five_button"
+        app:layout_constraintTop_toBottomOf="@id/dialog_three_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_seven_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="7"
+        app:layout_constraintEnd_toStartOf="@id/dialog_eight_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_four_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_eight_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="8"
+        app:layout_constraintEnd_toStartOf="@id/dialog_nine_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/dialog_seven_button"
+        app:layout_constraintTop_toBottomOf="@id/dialog_five_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_nine_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/dialog_eight_button"
+        app:layout_constraintTop_toBottomOf="@id/dialog_six_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_comma_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=","
+        app:layout_constraintEnd_toStartOf="@id/dialog_zero_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_seven_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_zero_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@id/dialog_clear_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/dialog_comma_button"
+        app:layout_constraintTop_toBottomOf="@id/dialog_eight_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="X"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/dialog_zero_button"
+        app:layout_constraintTop_toBottomOf="@id/dialog_nine_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dialog_add_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_clear_button" />
+
+    <Button
+        android:id="@+id/dialog_cancel_button"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_add_button"
+        app:layout_constraintEnd_toStartOf="@+id/dialog_add_button"
+        app:layout_constraintTop_toTopOf="@+id/dialog_add_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
